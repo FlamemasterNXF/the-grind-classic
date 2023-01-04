@@ -18,10 +18,10 @@ function getDefaultObject() {
 let data = getDefaultObject()
 //saving and loading
 function save(){
-    window.localStorage.setItem('theGrindSave', JSON.stringify(data))
+    window.localStorage.setItem('theGrindCLASSICWATERINGVERSIONSave', JSON.stringify(data))
 }
 function load() {
-    let savedata = JSON.parse(window.localStorage.getItem('theGrindSave'))
+    let savedata = JSON.parse(window.localStorage.getItem('theGrindCLASSICWATERINGVERSIONSave'))
     if (savedata !== undefined) fixSave(data, savedata)
 }
 //fix saves
@@ -70,6 +70,6 @@ window.onload = function (){
 //full reset
 function fullReset(){
     exportSave()
-    window.localStorage.removeItem('theGrindSave')
+    window.localStorage.removeItem('theGrindCLASSICWATERINGVERSIONSave')
     location.reload()
 }
